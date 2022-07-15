@@ -2,7 +2,7 @@
 
 # Project Name
 
-> BookStore
+### > BOOKSTORE
 
 ## Description
 
@@ -40,7 +40,7 @@ To get a local copy up and running follw these simple example steps:
     - $ After the node_module module is installed successfully, run npm start
     - $ The project will open on the browser with localhost:800
 ```
-- Open the project in your favorite code editor
+Open the project in your favorite code editor
 
 ## Author
 
