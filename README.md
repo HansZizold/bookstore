@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+### TITLE
 
 > ### BOOKSTORE
 
@@ -13,13 +13,13 @@
 
 ## Built With
 
-- *Visual Studio Code*
-
-- *Github Desktop application*
+- *[Create React App](https://github.com/facebook/create-react-app)*
 
 - *Linters for HTML/CSS/JS*
 
-- *[Create React App](https://github.com/facebook/create-react-app)*
+- *GIT/Github*
+
+- *Visual Studio Code*
 
 ## Getting Started
 
@@ -63,3 +63,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
