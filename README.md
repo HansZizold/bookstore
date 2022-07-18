@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+### TITLE
 
-> BookStore
+> ### BOOKSTORE
 
 ## Description
 
@@ -13,13 +13,13 @@
 
 ## Built With
 
-- *Visual Studio Code*
-
-- *Github Desktop application*
+- *[Create React App](https://github.com/facebook/create-react-app)*
 
 - *Linters for HTML/CSS/JS*
 
-- *[Create React App](https://github.com/facebook/create-react-app)*
+- *GIT/Github*
+
+- *Visual Studio Code*
 
 ## Getting Started
 
@@ -40,7 +40,7 @@ To get a local copy up and running follw these simple example steps:
     - $ After the node_module module is installed successfully, run npm start
     - $ The project will open on the browser with localhost:800
 ```
-- Open the project in your favorite code editor
+Open the project in your favorite code editor
 
 ## Author
 
@@ -63,3 +63,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
