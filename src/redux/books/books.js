@@ -1,5 +1,5 @@
-const ADDBOOK = 'bookstore/src/redux/books/ADD_BOOK';
-const REMOVEBOOK = 'bookstore/src/redux/books/REMOVE_BOOK';
+const ADDBOOK = 'bookstore/books/ADD_BOOK';
+const REMOVEBOOK = 'bookstore/books/REMOVE_BOOK';
 
 export const addBook = {
   type: ADDBOOK,
@@ -13,7 +13,9 @@ export const removeBook = {
   id: 0,
 };
 
-const bookReducer = (state = [], action) => {
+const initialState = [];
+
+const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADDBOOK:
       return [...state, action.payload];

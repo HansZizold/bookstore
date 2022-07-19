@@ -1,11 +1,13 @@
-const CHECKCATEGORIES = 'bookstore/src/redux/categories/CHECK_CATEGORIES';
+const CHECKCATEGORIES = 'bookstore/categories/CHECK_CATEGORIES';
 
 export const checkcategories = {
   type: CHECKCATEGORIES,
   id: 0,
 };
 
-const checkReducer = (state = [], action) => {
+const initialState = [];
+
+const checkReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHECKCATEGORIES:
       return 'UNDER CONSTRUCTION';
