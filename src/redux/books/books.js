@@ -1,19 +1,33 @@
 const ADDBOOK = 'bookstore/books/ADD_BOOK';
 const REMOVEBOOK = 'bookstore/books/REMOVE_BOOK';
 
-export const addBook = {
+export const addBook = (book) => ({
   type: ADDBOOK,
-  id: 0,
-  title: 'Book 0',
-  author: 'Author 0',
-};
+  payload: book,
+});
 
-export const removeBook = {
+export const removeBook = (id) => ({
   type: REMOVEBOOK,
-  id: 0,
-};
+  payload: id,
+});
 
-const initialState = [];
+const initialState = [
+  {
+    id: 1,
+    title: 'Redux',
+    author: 'Author 1',
+  },
+  {
+    id: 2,
+    title: 'Redux Toolkit',
+    author: 'Author 2',
+  },
+  {
+    id: 3,
+    title: 'React-Redux',
+    author: 'Author 3',
+  },
+];
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {

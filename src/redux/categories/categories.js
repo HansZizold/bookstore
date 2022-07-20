@@ -1,16 +1,16 @@
 const CHECKCATEGORIES = 'bookstore/categories/CHECK_CATEGORIES';
 
-export const checkcategories = {
+export const checkcategories = (category) => ({
   type: CHECKCATEGORIES,
-  id: 0,
-};
+  payload: category,
+});
 
 const initialState = [];
 
 const checkReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHECKCATEGORIES:
-      return 'UNDER CONSTRUCTION';
+      return [action.payload];
     default:
       return state;
   }
