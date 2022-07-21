@@ -10,6 +10,7 @@
 
 - Add books.
 - Remove books.
+- Check Categories.
 
 ## Built With
 
