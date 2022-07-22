@@ -9,19 +9,24 @@ function InputBook() {
     elem.preventDefault();
     const title = elem.target[0].value;
     const author = elem.target[1].value;
-    if (title && author) {
-      const book = { id: new Date().getTime(), title, author };
+    const category = elem.target[2].value;
+    if (title && author && category) {
+      const book = {
+        item_id: new Date().getTime().toString(), title, author, category,
+      };
       dispatch(addBook(book));
       document.getElementById('title').value = '';
       document.getElementById('author').value = '';
+      document.getElementById('category').value = '';
     }
   };
 
   return (
     <>
       <form action="" onSubmit={handleSubmit}>
-        <input type="text" id="title" placeholder="Enter title" />
-        <input type="text" id="author" placeholder="Enter author" />
+        <input type="text" id="title" placeholder="Enter Title" />
+        <input type="text" id="author" placeholder="Enter Author" />
+        <input type="text" id="category" placeholder="Enter Category" />
         <input type="submit" value="Add Book" />
       </form>
     </>
