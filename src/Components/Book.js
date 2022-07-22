@@ -7,7 +7,9 @@ import { removeBook } from '../redux/books/books';
 import styles from './Book.module.css';
 
 function Book(props) {
-  const { title, author, id } = props;
+  const {
+    title, author, id, category,
+  } = props;
   const dispatch = useDispatch();
 
   const handleClick = () => {
@@ -18,6 +20,7 @@ function Book(props) {
     <>
       <p>{title}</p>
       <p>{author}</p>
+      <p>{category}</p>
       <button
         type="button"
         className={styles.removebutton}
@@ -32,6 +35,7 @@ function Book(props) {
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  category: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 export default Book;
