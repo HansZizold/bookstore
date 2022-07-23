@@ -14,8 +14,7 @@ const Books = () => {
     dispatch(getBooks());
   }, [dispatch]);
   return (
-    <>
-      <h2 className={styles.title}>List of Books</h2>
+    <div className={styles.books}>
       <div className={styles.booklist}>
         {booklist.map((elem) => {
           const {
@@ -33,7 +32,7 @@ const Books = () => {
         })}
       </div>
       <InputBook />
-    </>
+    </div>
   );
 };
 export default Books;
