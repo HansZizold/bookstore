@@ -14,10 +14,10 @@ function App() {
     <Router>
       <main>
         <header>
-          <h1>BookStore</h1>
+          <h1>BookStore CMS</h1>
           <nav>
-            <Link to="/">Books</Link>
-            <Link to="Categories">Categories</Link>
+            <Link to="/" className="books">BOOKS</Link>
+            <Link to="Categories" className="categories">CATEGORIES</Link>
           </nav>
         </header>
         <Routes>

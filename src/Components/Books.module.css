@@ -1,14 +1,11 @@
-.title {
-  margin: 80px 16% 0;
-  border: 1px solid black;
-  width: 50vw;
+.books {
+  background-color: aliceblue;
+  width: 88vw;
 }
 
 .booklist {
-  margin: 40px 16% 0;
-  border: 1px solid black;
-  height: 50vh;
-  width: 50vw;
+  margin: 32px 8%;
+  width: 74vw;
 }
 
 form {

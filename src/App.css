@@ -19,10 +19,21 @@ main {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: center;
-  width: 97%;
+  width: 84vw;
+  margin: 1.813rem 0 1.813rem 6.25rem;
   padding: 0 1.5%;
+}
+
+h1 {
+  width: 16rem;
+  height: 2.313rem;
+  margin: 0.375rem 16px 0.125rem 0;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #0290ff;
 }
 
 nav {
@@ -31,4 +42,21 @@ nav {
 
 nav a {
   margin: 0 8px;
+}
+
+.books {
+  color: #121212;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.categories {
+  color: #121212;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-right: 16px;
+  opacity: 0.5;
 }

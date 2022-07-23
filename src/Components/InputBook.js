@@ -2,6 +2,8 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
+import styles from './InputBook.module.css';
+
 function InputBook() {
   const dispatch = useDispatch();
 
@@ -22,14 +24,16 @@ function InputBook() {
   };
 
   return (
-    <>
+    <div className={styles.inputmain}>
+      <hr className={styles.line} />
+      <h2>ADD NEW BOOK</h2>
       <form action="" onSubmit={handleSubmit}>
-        <input type="text" id="title" placeholder="Enter Title" />
-        <input type="text" id="author" placeholder="Enter Author" />
-        <input type="text" id="category" placeholder="Enter Category" />
-        <input type="submit" value="Add Book" />
+        <input type="text" className={styles.title} id="title" placeholder="Book Title" />
+        <input type="text" className={styles.title} id="author" placeholder="Book Author" />
+        <input type="text" className={styles.category} id="category" placeholder="Category" />
+        <input type="submit" className={styles.addbutton} value="Add Book" />
       </form>
-    </>
+    </div>
   );
 }
 export default InputBook;

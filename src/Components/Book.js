@@ -17,18 +17,53 @@ function Book(props) {
   };
 
   return (
-    <>
-      <p>{title}</p>
-      <p>{author}</p>
-      <p>{category}</p>
-      <button
-        type="button"
-        className={styles.removebutton}
-        onClick={handleClick}
-      >
-        Remove Book
-      </button>
-    </>
+    <div className={styles.book}>
+      <div className={styles.sectionone}>
+        <div className={styles.bookdata}>
+          <p className={styles.category}>{category}</p>
+          <p className={styles.title}>{title}</p>
+          <p className={styles.author}>{author}</p>
+        </div>
+        <div>
+          <button
+            type="button"
+            className={styles.buttonbook}
+          >
+            Comments
+          </button>
+          <button
+            type="button"
+            className={styles.buttonbook}
+            onClick={handleClick}
+          >
+            Remove Book
+          </button>
+          <button
+            type="button"
+            className={styles.buttonbook}
+          >
+            Edit
+          </button>
+        </div>
+      </div>
+      <div className={styles.sectiontwo}>
+        <div className={styles.circle} />
+        <div className={styles.completed}>
+          <div className={styles.percentage}>75%</div>
+          <div className={styles.text}>Completed</div>
+        </div>
+      </div>
+      <div className={styles.sectionthree}>
+        <p className={styles.current}>CURRENT CHAPTER</p>
+        <p className={styles.intro}>Introduction</p>
+        <button
+          type="button"
+          className={styles.updatebutton}
+        >
+          UPDATE PROGRESS
+        </button>
+      </div>
+    </div>
   );
 }
 
