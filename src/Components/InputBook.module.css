@@ -8,15 +8,15 @@
 
 h2 {
   margin: 16px 0 12px 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
 }
 
 .title {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   height: 2.813rem;
   width: 22vw;
   margin: 1.188rem 2.125rem 0 0;
@@ -32,7 +32,7 @@ h2 {
 }
 
 .category {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   height: 2.813rem;
   width: 16vw;
   margin: 1.188rem 2.125rem 0 0;
@@ -45,7 +45,7 @@ h2 {
 .addbutton {
   border: none;
   background: none;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
   letter-spacing: 0.5px;
